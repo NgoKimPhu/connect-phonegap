@@ -1,5 +1,5 @@
 (function(window) {
-    var socket = io('http://' + document.location.host);
+    var socket = io(document.location.origin);
 
     // Copy the functions to avoid stack overflow
     var previousConsole = Object.assign({}, window.console);
